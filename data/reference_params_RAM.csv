@@ -1,0 +1,12 @@
+param_type,aircraft_type,value,description
+gamma_shape,ALL,2.0,alpha Gamma
+gamma_scale,ALL,15.0,theta Gamma
+markov_transition,Normal->Normal,0.65,Markov Normal->Normal
+markov_transition,Normal->Alerte,0.28,Markov Normal->Alerte
+markov_transition,Normal->Bloque,0.07,Markov Normal->Bloque
+markov_transition,Alerte->Normal,0.25,Markov Alerte->Normal
+markov_transition,Alerte->Alerte,0.52,Markov Alerte->Alerte
+markov_transition,Alerte->Bloque,0.23,Markov Alerte->Bloque
+markov_transition,Bloque->Normal,0.08,Markov Bloque->Normal
+markov_transition,Bloque->Alerte,0.28,Markov Bloque->Alerte
+markov_transition,Bloque->Bloque,0.64,Markov Bloque->Bloque
